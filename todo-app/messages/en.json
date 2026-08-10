@@ -1,0 +1,36 @@
+{
+  "LanguageSettings": {
+    "title": "Language Settings",
+    "description": "Choose your preferred application language.",
+    "selected": "Selected",
+    "languages": {
+      "en": "English",
+      "sv": "Swedish"
+    }
+  },
+  
+  "Settings": {
+    "title": "Settings",
+    "description": "Manage your account, preferences and integrations",
+
+    "account": "Account",
+    "accountDescription": "Manage your profile and account information",
+
+    "notifications": "Notifications",
+    "notificationsDescription": "Control reminders and productivity alerts",
+
+    "appearance": "Appearance",
+    "appearanceDescription": "Choose theme and dashboard style",
+
+    "language": "Language",
+    "languageDescription": "Change application language",
+
+    "integrations": "Integrations",
+    "integrationsDescription": "Connect Google, AI and social accounts",
+
+    "security": "Security",
+    "securityDescription": "Password and privacy settings"
+  }
+
+
+}

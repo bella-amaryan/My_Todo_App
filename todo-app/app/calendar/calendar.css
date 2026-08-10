@@ -1,0 +1,141 @@
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0;
+}
+
+.calendar-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0;
+  background-color: #2a3f6a;
+}
+
+.calendar-day-header {
+  background-color:rgb(150, 150, 228);
+  color: white;
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  border: 1px solid #4b5563;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0;
+  background-color: #d6e2f7;
+  
+}
+
+.calendar-cell {
+  
+  padding: 20px 12px;
+  text-align: center;
+  font-weight: 600;
+  color: #374151;
+   background-color: #d6e2f7;
+  cursor: pointer;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  border: 1px solid #d1d5db;
+}
+
+.calendar-cell:hover:not(.empty) {
+  background-color: #f9fafb;
+}
+
+.calendar-cell.empty {
+  background-color: #d6e2f7;
+  cursor: default;
+  border-color: 1px solid  #d1d5db;
+}
+
+.calendar-cell.selected {
+  background-color: #7c3aed;
+  color: white;
+  font-weight: bold;
+}
+
+.calendar-cell.has-events {
+  background-color: #f0f0f0;
+  font-weight: 700;
+}
+
+.calendar-cell.has-events:not(.selected) {
+  background-color: #e8e8e8;
+  color: #1f2937;
+}
+
+.calendar-cell.has-events.selected {
+  background-color: #7c3aed;
+  color: white;
+}
+
+.day-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+}
+
+.day-number {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.event-indicator {
+  font-size: 10px;
+  background-color: #ef4444;
+  color: white;
+  padding: 3px 7px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.calendar-cell.selected .event-indicator {
+  background-color: #fbbf24;
+  color: #1f2937;
+}
+
+/* Error animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.slide-in-from-top {
+  animation: slideInFromTop 0.3s ease-in-out;
+}
+
+

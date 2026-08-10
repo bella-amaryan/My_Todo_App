@@ -1,0 +1,35 @@
+{
+  "LanguageSettings": {
+    "title": "Språkinställningar",
+    "description": "Välj ditt föredragna applikationsspråk.",
+    "selected": "Vald",
+    "languages": {
+      "en": "Engelska",
+      "sv": "Svenska"
+    }
+  },
+  
+  "Settings": {
+    "title": "Inställningar",
+    "description": "Hantera ditt konto, dina inställningar och integrationer",
+
+    "account": "Konto",
+    "accountDescription": "Hantera din profil och kontoinformation",
+
+    "notifications": "Aviseringar",
+    "notificationsDescription": "Hantera påminnelser och produktivitetsaviseringar",
+
+    "appearance": "Utseende",
+    "appearanceDescription": "Välj tema och instrumentpanelens stil",
+
+    "language": "Språk",
+    "languageDescription": "Ändra programmets språk",
+
+    "integrations": "Integrationer",
+    "integrationsDescription": "Anslut Google, AI och sociala konton",
+
+    "security": "Säkerhet",
+    "securityDescription": "Lösenord och sekretessinställningar"
+  }
+}
+
